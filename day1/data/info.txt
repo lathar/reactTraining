@@ -1,0 +1,43 @@
+emmet useful for zen coding.
+
+Day 1
+
+1. Installing the softwares
+2. Basic html
+3. undefined -> not declared 
+document -> document object model
+window.onload => on refer to microsoft introduced, can't do unregister
+window.addEvenListener => has removeEvent Listener
+caniuse.com, website to find the speed of javascript  --?
+to validate json -> jsonlint.com
+browser js render -> IE it is chakara , firefox it is monkey , chrome it is V8 engine
+councerrency replays with promise awaits
+es5 & es6 ( it is standard version of es5)
+Block scope
+-----------
+hosting -> host flag :)
+let and const - block scoping, this also hosting but it create object in temporaral dead zone.
+const -> collections can update using const by adding or remove.
+in javascript collections are dynamic.
+javascript is single threaded. webworker create pesudo mulitple threaded. (javascript by docuglers)
+De structuring
+--------------
+Differnt way of assigning variable
+if the name is match  of object then assign to same key
+function
+--------
+functions are object in JS
+if function assign to variable it will hosted
+undefined concat to number is nan
+arguments attribute in function is depecarted
+rest arguments ( ...[variablename]) like ...nums , nums is variable name
+rest and spread operators
+ rest -> ...number in the function defining parameters function test(...number) {}
+ spread -> ...param while calling/ invoking the function. tets(...param);
+spread can use only used for arrays
+lexical scope 
+function are object it call be called by obj.call() or obj.apply() or obj.bind()() 
+call(),apply(),bind() is replaced by arrow scope
+arrow functions uses the scope of the parent
+mutable objects and immutable -?
+interfaces -?

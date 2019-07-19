@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Block scope</title>
+    <script> // cont 
+            var hero = "IronMan";
+            hero ="joker";
+            console.log(hero);
+        /**/
+        var Obj1 = {
+            val1 : "111",
+            val2: "222"
+        }
+        /* ways of assigning values */
+        /*Below is assigning the object */
+        var obj2 = Obj1;
+        console.log(Obj1.val1, Obj1.val2); //111,222
+        obj2.val1 = "333";
+        /*Below is assigning the object to variables*/
+        var oval1 = Obj1.val1, oval2 = Obj1.val2;
+
+        console.log(Obj1.val1, Obj1.val2); //333,222
+        console.log(oval1, oval2);
+
+        /*Below is assigning the object variables using destructing */
+        let { val1, val2} =Obj1;  //de structuring if the name is match  of object then assign to same key
+        console.log(val1,val2);
+        /* assing values to the different variable names v1,v2*/
+        let { val1: v1, val2:v2} = Obj1;
+        console.log(v1, v2);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

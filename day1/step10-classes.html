@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script> 
+class Person {
+    constructor (htitle) {
+        this.title = htitle;
+    }
+}
+class Hero extends Person{
+
+    constructor(fn, ln, pt) {
+        super(pt);
+        this.fname = fn;
+        this.lname = ln;
+        this._secert =" Hello there";
+    }
+    fullname(){
+        return this.fname + " " + this.lname;
+    }
+    // getter and setter method are property of the call
+    get secret() {
+        return this._secert;
+    }
+    set secret(nsecert) {
+        this._secert = nsecert;
+    }   
+}
+var hero1 = new Hero("Burce", "Wayne", "Batman");
+var hero2 = new Hero("Peter", "Parker", "Spiderman");
+console.log('hero1', hero1.fullname(), hero1.secret);
+console.log('hero2', hero2.fullname(), hero2.secret ="test", hero2.secret);
+</script>
+<body>
+    
+</body>
+</html>

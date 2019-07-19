@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    /*
+    To sort string we can use sort() function
+    To sort the int we have to have a function like sortFun which will return -1,0.-1*/
+    var numbers = [6, 8, 93, 7, 1, 9, 2];
+    function sortFun(num1, num2) {
+        if (num1 > num2) {
+            return 1
+        } else if (num1 < num2) {
+            return -1
+        } else {
+            return 0
+        }
+    }
+    console.log(numbers.sort(sortFun));
+    var heroes = [
+        { title: "Spiderman", power: 6 },
+        { title: "Ironman", power: 3 },
+        { title: "Thor", power: 21 },
+        { title: "captian American", power: 45 },
+        { title: "Hulk", power: 8 },
+    ];
+    function sortFun(obj1, obj2) {
+        if (obj1.power > obj2.power) {
+            return 1
+        } else if (obj1.power < obj2.power) {
+            return -1
+        } else {
+            return 0
+        }
+    }
+
+    console.log(heroes.sort(sortFun));
+    /*
+    forEach, map,filter, reduce,reduceRight, indexOf, lastIndexOf
+    dif btw forEach and map is foreach return single value and map will return array
+    */
+    var doubleVal =[];
+    numbers.forEach(function(val, idx, arr){
+        doubleVal.push(val *2);
+    })
+    console.log('doubleVal ->', doubleVal);
+    var doubleAgain= numbers.map(function(val,idx,arr){
+        return  val *2;
+    }) 
+    console.log('doubleAgain ->',doubleAgain);
+    var superPower = numbers.filter(function(val,idx,arr){
+        return val >10
+    })
+    console.log('Array greater than 10 ->',superPower);
+    /*reduce and reduceRight is used to add the array values
+      reduce will take 2 parameters -> first as callback and second param is inital val
+    */
+    var totalPower = numbers.reduce(function(prevVal, val,idx,arr){
+        return prevVal + val;
+    }, 0);
+    console.log('Array Reduce ->', totalPower);
+</script>
+
+<body>
+
+</body>
+
+</html>

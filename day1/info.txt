@@ -1,0 +1,60 @@
+emmet useful for zen coding.
+http://www.github.com/labfiles
+
+Day 1
+
+1. Installing the softwares
+2. Basic html
+3. undefined -> not declared 
+document -> document object model
+window.onload => on refer to microsoft introduced, can't do unregister
+window.addEvenListener => has removeEvent Listener
+caniuse.com, website to find the speed of javascript  --?
+bracket.io -> use to complier js on the fly by adobe
+to validate json -> jsonlint.com
+browser js render -> IE it is chakara , firefox it is monkey , chrome it is V8 engine
+councerrency replays with promise awaits
+es5 & es6 ( it is standard version of es5)
+Block scope
+-----------
+hosting -> host flag :)
+let and const - block scoping, this also hosting but it create object in temporaral dead zone.
+const -> collections can update using const by adding or remove but not able to delete.
+in javascript collections are dynamic.
+javascript is single threaded. webworker create pesudo mulitple threaded. (javascript by docuglers)
+De structuring
+--------------
+Differnt way of assigning variable
+if the name is match  of object then assign to same key
+function
+--------
+functions are object in JS
+if function assign to variable it will hosted
+undefined concat to number is nan
+arguments attribute in function is depecarted
+rest arguments ( ...[variablename]) like ...nums , nums is variable name
+rest and spread operators
+ rest -> ...number in the function defining parameters function test(...number) {}
+ spread -> ...param while calling/ invoking the function. tets(...param);
+spread can use only used for arrays
+lexical scope 
+function are object it call be called by obj.call() or obj.apply() or obj.bind()() 
+call() -> it takes as context followed by parameters required 
+apply () -> it takes as context followed by array of parameters
+bind() -> it takes as content and while calling we have to pass the parameters
+call(),apply(),bind() is replaced by arrow scope
+arrow functions uses the scope of the parent
+mutable objects and immutable -?
+interfaces -?
+css -> verrtical margin collapse
+template string => using of ``
+class 
+-----
+prototype -> it is a empty object in a object , we can append anything we needed
+inside a class all the methods are public
+class will not allow to have var or let
+to have a private variable it can be declared as ._ like this._variablename
+compiler -> take the code and converted to machinie understand language
+transpiler -> take js and return js like es6 to es5 eg:bable, tracer
+composition -> ?
+closure - > ?
