@@ -1,0 +1,103 @@
+emmet useful for zen coding.
+http://www.github.com/labfiles
+javascript.info
+Day 1
+
+1. Installing the softwares
+2. Basic html
+3. undefined -> not declared 
+document -> document object model
+window.onload => on refer to microsoft introduced, can't do unregister
+window.addEvenListener => has removeEvent Listener
+caniuse.com, website to find the speed of javascript  --?
+bracket.io -> use to complier js on the fly by adobe
+to validate json -> jsonlint.com
+browser js render -> IE it is chakara , firefox it is monkey , chrome it is V8 engine
+councerrency replays with promise awaits
+es5 & es6 ( it is standard version of es5)
+Block scope
+-----------
+hosting -> host flag :)
+let and const - block scoping, this also hosting but it create object in temporaral dead zone.
+const -> collections can update using const by adding or remove but not able to delete.
+in javascript collections are dynamic.
+javascript is single threaded. webworker create pesudo mulitple threaded. (javascript by docuglers)
+De structuring
+--------------
+Differnt way of assigning variable
+if the name is match  of object then assign to same key
+function
+--------
+functions are object in JS
+if function assign to variable it will hosted
+undefined concat to number is nan
+arguments attribute in function is depecarted
+rest arguments ( ...[variablename]) like ...nums , nums is variable name
+rest and spread operators
+ rest -> ...number in the function defining parameters function test(...number) {}
+ spread -> ...param while calling/ invoking the function. tets(...param);
+spread can use only used for arrays
+lexical scope 
+function are object it call be called by obj.call() or obj.apply() or obj.bind()() 
+call() -> it takes as context followed by parameters required 
+apply () -> it takes as context followed by array of parameters
+bind() -> it takes as content and while calling we have to pass the parameters
+call(),apply(),bind() is replaced by arrow scope
+arrow functions uses the scope of the parent
+
+mutable objects and immutable -?
+Objects are default mutable. to change immutable prev it is another js used 
+but es6 has this feature present.
+3 differnt wyas to create object
+    -> var obj = {} //empty obj
+    -> var obj = new Object();
+    -> var obj = Object.create(); //immutable objetcs
+
+
+interfaces -?
+css -> verrtical margin collapse
+template string => using of ``
+class 
+-----
+prototype -> it is a empty object in a object , we can append anything we needed
+inside a class all the methods are public
+class will not allow to have var or let
+to have a private variable it can be declared as ._ like this._variablename
+compiler -> take the code and converted to machinie understand language
+transpiler -> take js and return js like es6 to es5 eg:bable, tracer
+composition -> ?
+closure - > ?
+
+Day2
+----
+oreally forum
+js conf / js foo
+
+Nodejs -> server side JS
+express js -> it is Javascript module to serve files
+middleware js -> things happen btw equest and response
+react -> build component
+react-dom -> render the modules
+react-script -> complier using bable
+differnt ways to import
+import react from <react module> // inside module if there is any [class export default ] then this way used
+import {react} from <react module> // inside module if class is just export then [export class] then {} used with same name as export
+html 5 has webcompoent which allowed to create the custom tags
+
+To change port 
+go to -> node_modules/react-scripts/start.js
+
+To create the react project
+1. install react --> npm install -g create-react-app 
+2. create application --> create-react-app <application name> 
+3. cd <application name>
+4. start happy coding ... :)
+5. to install routing use " npm i react-router-dom "
+6. npm i axios  -> to fetch the data
+DAy3
+----
+backbone js -non introuceive program [seperate the client app ]
+angular nad react - introceive [the client app can't seperate]
+use developer browser -> chrome : canary
+
+vijay.shivu@gmail.com
